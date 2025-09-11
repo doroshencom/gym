@@ -1,0 +1,232 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #f8f9fa;
+  --foreground: #1c1e21;
+  --card: #ffffff;
+  --card-foreground: #1c1e21;
+  --popover: #ffffff;
+  --popover-foreground: #1c1e21;
+  --primary: #1877f2;
+  --primary-foreground: #ffffff;
+  --secondary: #e3f2fd;
+  --secondary-foreground: #1565c0;
+  --muted: #f0f2f5;
+  --muted-foreground: #65676b;
+  --accent: #e3f2fd;
+  --accent-foreground: #1877f2;
+  --destructive: #e41e3f;
+  --destructive-foreground: #ffffff;
+  --border: #dadde1;
+  --input: #ffffff;
+  --input-background: #ffffff;
+  --switch-background: #e4e6ea;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #1877f2;
+  --chart-1: #1877f2;
+  --chart-2: #42a5f5;
+  --chart-3: #64b5f6;
+  --chart-4: #90caf9;
+  --chart-5: #bbdefb;
+  --radius: 0.5rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1c1e21;
+  --sidebar-primary: #1877f2;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e3f2fd;
+  --sidebar-accent-foreground: #1565c0;
+  --sidebar-border: #dadde1;
+  --sidebar-ring: #1877f2;
+}
+
+.dark {
+  --background: #18191a;
+  --foreground: #e4e6ea;
+  --card: #242526;
+  --card-foreground: #e4e6ea;
+  --popover: #242526;
+  --popover-foreground: #e4e6ea;
+  --primary: #2d88ff;
+  --primary-foreground: #ffffff;
+  --secondary: #3a3b3c;
+  --secondary-foreground: #b0b3b8;
+  --muted: #3a3b3c;
+  --muted-foreground: #b0b3b8;
+  --accent: #3a3b3c;
+  --accent-foreground: #2d88ff;
+  --destructive: #fa383e;
+  --destructive-foreground: #ffffff;
+  --border: #3e4042;
+  --input: #3a3b3c;
+  --ring: #2d88ff;
+  --chart-1: #2d88ff;
+  --chart-2: #42a5f5;
+  --chart-3: #64b5f6;
+  --chart-4: #90caf9;
+  --chart-5: #bbdefb;
+  --sidebar: #242526;
+  --sidebar-foreground: #e4e6ea;
+  --sidebar-primary: #2d88ff;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #3a3b3c;
+  --sidebar-accent-foreground: #b0b3b8;
+  --sidebar-border: #3e4042;
+  --sidebar-ring: #2d88ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+/* Meta/Facebook Style Effects */
+.meta-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.meta-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.meta-card-strong {
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.primary-shadow {
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.2);
+}
+
+.primary-shadow-strong {
+  box-shadow: 0 8px 24px rgba(24, 119, 242, 0.3);
+}
+
+/* Clean gradient background */
+.meta-bg {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
+}
+
+/* Dark mode adjustments */
+.dark .meta-bg {
+  background: linear-gradient(135deg, #18191a 0%, #242526 100%);
+}
+
+.dark .meta-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dark .meta-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
