@@ -1,16 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muere Gym, en pareja</title>
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Gimnasio Routine Visualizer</title>
-      <script type="module" crossorigin src="/assets/index-G1x0z04O.js"></script>
-      <link rel="stylesheet" crossorigin href="/assets/index-bjHtDSEy.css">
-    </head>
+    <!-- Descripción y SEO -->
+    <meta name="description" content="Rutinas de gimnasio en pareja, complementarias y motivadoras. Entrena con tu pareja, gana fuerza, tonifica y diviértete." />
+    <meta name="keywords" content="gimnasio, rutinas en pareja, entrenamiento, fitness, fuerza, glúteos, pectoral" />
+    <meta name="author" content="Muere Gym App" />
 
-    <body>
-      <div id="root"></div>
-    </body>
-  </html>
-  
+    <!-- Favicon e iconos -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://doroshen.com/dev/training/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://doroshen.com/dev/training/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://doroshen.com/dev/training/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="https://doroshen.com/dev/training/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="https://doroshen.com/dev/training/android-chrome-512x512.png" />
+    <link rel="manifest" href="https://doroshen.com/dev/training/site.webmanifest" />
+    <meta name="theme-color" content="#121212" />
+
+    <!-- Open Graph (para compartir en redes sociales) -->
+    <meta property="og:title" content="Muere Gym" />
+    <meta property="og:description" content="Rutinas de gimnasio en pareja, diseñadas para perder grasa, tonificar y ganar músculo. Coincide en los ejercicios clave con tu pareja." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shenko.es" />
+    <meta property="og:image" content="https://doroshen.com/dev/training/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Muere Gym" />
+    <meta name="twitter:description" content="Rutinas de gimnasio en pareja: complementarias, motivadoras y divertidas." />
+    <meta name="twitter:image" content="https://doroshen.com/dev/training/og-image.png" />
+
+    <!-- Loader styles -->
+    <style>
+      #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #121212;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      #loader img {
+        width: 150px;
+        height: auto;
+      }
+    </style>
+
+    <!-- Archivos principales -->
+    <script type="module" crossorigin src="/assets/index-G1x0z04O.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-bjHtDSEy.css">
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div id="loader">
+      <img src="https://doroshen.com/dev/training/gym-loader.gif" alt="Cargando..." />
+    </div>
+
+    <!-- Root app -->
+    <div id="root" style="display:none;"></div>
+
+    <!-- Script para ocultar loader cuando la app carga -->
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        const root = document.getElementById("root");
+
+        if (loader) loader.style.display = "none";
+        if (root) root.style.display = "block";
+      });
+    </script>
+  </body>
+</html>

@@ -37,11 +37,11 @@ export const workoutData: WorkoutDay[] = [
       },
       {
         id: "1-2",
-        name: "Sentadilla en máquina Smith o Goblet",
+        name: "Prensa de piernas (diagonal)",
         sets: "4",
         reps: "10",
-        searchQuery: "smith machine squat exercise",
-        imageUrl: "https://images.pexels.com/photos/5327534/pexels-photo-5327534.jpeg"
+        searchQuery: "leg press machine exercise",
+        imageUrl: "https://quierocuidarme.dkv.es/sites/default/files/2025-03/prensa-pierna-2.jpg"
       },
       {
         id: "1-3",
@@ -63,11 +63,11 @@ export const workoutData: WorkoutDay[] = [
       },
       {
         id: "1-5",
-        name: "Elevación de talones de pie (gemelos)",
+        name: "Elevación de talones en máquina de gemelos",
         sets: "3",
         reps: "15",
         searchQuery: "standing calf raises exercise",
-        imageUrl: "https://www.escuelaculturismonatural.com/wp-content/uploads/2022/11/gemelos.jpg"
+        imageUrl: "https://mundoentrenamiento.com/wp-content/uploads/2025/05/gemelos-en-maquina.png"
       },
       {
         id: "1-6",
@@ -75,7 +75,7 @@ export const workoutData: WorkoutDay[] = [
         sets: "3",
         duration: "30 seg",
         searchQuery: "plank exercise",
-        imageUrl: "https://fotografias.larazon.es/clipping/cmsimages01/2022/10/20/FEA3BE21-7842-4D00-AF9D-F6DD662265F2/98.jpg?crop=672,378,x3,y0&width=1900&height=1069&optimize=low&format=webp"
+        imageUrl: "https://fotografias.larazon.es/clipping/cmsimages01/2022/10/20/FEA3BE21-7842-4D00-AF9D-F6DD662265F2/98.jpg?crop=672,378,x3,y0&width=1900&height=1069&optimize=low&format=webply"
       }
     ]
   },
@@ -124,9 +124,9 @@ export const workoutData: WorkoutDay[] = [
         sets: "3",
         reps: "10-12",
         searchQuery: "bicep curl dumbbells exercise",
-        notes: "Opcional para pareja: Sentadilla sumo con mancuerna 3x12",
+        notes: "Opcional para pareja: Prensa horizontal (en máquina) 3x12",
         imageUrl: "https://lifefuel.es/wp-content/uploads/2024/06/Curl-de-biceps-barra-vs-Mancuerna.jpg",
-        partnerImageUrl: "https://espowerlifting.com/wp-content/uploads/2018/10/sentadilla-sumo-con-mancuernas.jpg"
+        partnerImageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDviqM152EVOYegavJqpSa3cZuSq-JYE8JpQ&s"
       },
       {
         id: "2-6",
@@ -163,16 +163,6 @@ export const workoutData: WorkoutDay[] = [
       },
       {
         id: "3-3",
-        name: "Press de pecho inclinado",
-        sets: "3",
-        reps: "8-10",
-        searchQuery: "incline chest press exercise",
-        notes: "Opcional para pareja: Hip Thrust 4x12",
-        imageUrl: "https://blogscdn.thehut.net/app/uploads/sites/450/2021/12/2634442311638521968_1640252170.jpeg",
-        partnerImageUrl: "https://images.ctfassets.net/0k812o62ndtw/7GJbPRKGMwuMZlNJSrzucg/2ce553d1ee287f1e8064f6e53c25e3cf/Shutterstock_2212080951.jpg?w=1024&q=85"
-      },
-      {
-        id: "3-4",
         name: "Peso muerto rumano",
         sets: "3",
         reps: "10",
@@ -180,7 +170,23 @@ export const workoutData: WorkoutDay[] = [
         imageUrl: "https://www.fitactiva.com/wp-content/uploads/2024/03/peso-muerto-rumano-mancuernas.png"
       },
       {
+        id: "3-4",
+        name: "Curl de cuádriceps",
+        sets: "3",
+        reps: "12",
+        searchQuery: "leg extension exercise",
+        imageUrl: "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/08/17/16922532683187.jpg"
+      },
+      {
         id: "3-5",
+        name: "Curl femoral",
+        sets: "3",
+        reps: "12",
+        searchQuery: "leg curl exercise",
+        imageUrl: "https://blogscdn.thehut.net/app/uploads/sites/450/2021/12/shutterstock_1471492208-1-ftt-min_1639666672-700x392_1640697637.jpg"
+      },
+      {
+        id: "3-6",
         name: "Plancha con toque de hombros",
         sets: "3",
         reps: "20",
@@ -188,7 +194,7 @@ export const workoutData: WorkoutDay[] = [
         imageUrl: "https://www.sportlife.es/uploads/static/sportlife/upload/images/paragrapharticle/9775/imagenes/ej-tocar-hombro.jpg"
       },
       {
-        id: "3-6",
+        id: "3-7",
         name: "Crunch abdominal",
         sets: "3",
         reps: "20",
@@ -244,9 +250,9 @@ export const workoutData: WorkoutDay[] = [
         sets: "3",
         reps: "12",
         searchQuery: "tricep pushdown cable exercise",
-        notes: "Opcional para pareja: Abducciones con goma 3x15",
+        notes: "Opcional para pareja: Abductores en máquina 3x15",
         imageUrl: "https://www.cambiatufisico.com/wp-content/uploads/2011/02/Jalones-con-cuerda.jpg",
-        partnerImageUrl: "https://cdn.shopify.com/s/files/1/0269/5551/3900/files/Band-Seated-Hip-Abduction_600x600.png?v=1656404992"
+        partnerImageUrl: "https://fitgeneration.es/wp-content/uploads/2023/11/Maquinas-de-abductor-5-jpg.webp"
       },
       {
         id: "4-6",
@@ -276,19 +282,19 @@ export const workoutData: WorkoutDay[] = [
       },
       {
         id: "5-2",
-        name: "Sentadilla sumo con mancuerna",
+        name: "Prensa de piernas",
         sets: "4",
         reps: "10",
-        searchQuery: "sumo squat dumbbell exercise",
-        imageUrl: "https://www.cambiatufisico.com/wp-content/uploads/Sentadillas-con-mancuerna-sumo.jpg"
+        searchQuery: "leg press machine exercise",
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk2B4lUw7JhAAbxHzIUUWiQQ6F4nCZOrlr8g&s"
       },
       {
         id: "5-3",
-        name: "Remo con mancuerna a una mano",
+        name: "Remo en máquina sentado",
         sets: "3",
-        reps: "10 por lado",
-        searchQuery: "dumbbell row one arm exercise",
-        imageUrl: "https://www.cambiatufisico.com/wp-content/uploads/remo-mancuerna-1.jpg"
+        reps: "10",
+        searchQuery: "seated row machine exercise",
+        imageUrl: "https://www.cambiatufisico.com/wp-content/uploads/remo-maquina1.jpg"
       },
       {
         id: "5-4",
@@ -302,11 +308,11 @@ export const workoutData: WorkoutDay[] = [
       },
       {
         id: "5-5",
-        name: "Plancha abdominal lateral",
-        sets: "2",
-        duration: "30 seg por lado",
-        searchQuery: "side plank exercise",
-        imageUrl: "https://www.hola.com/horizon/original_aspect_ratio/0e7d56e1b765-elevacion-cadera-z.jpg"
+        name: "Crunch abdominal",
+        sets: "3",
+        reps: "20",
+        searchQuery: "crunch abdominal exercise",
+        imageUrl: "https://www.shutterstock.com/image-illustration/abdominal-crunch-machine-3d-illustration-260nw-418630585.jpg"
       },
       {
         id: "5-6",
